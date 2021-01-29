@@ -9,6 +9,9 @@ module.exports = {
   url: 'https://TBIGC.github.io',
   baseUrl: '/documentation/',
   themeConfig: {
+    colorMode: {
+      disableSwitch: true
+    },
     navbar: {
       title: 'TBI Digital Dashboard',
       logo: {
@@ -17,7 +20,7 @@ module.exports = {
       },
       items: [
         {
-          href: 'https://dashboard-demo.institute.global',
+          href: 'https://digital-dashboard-demo.herokuapp.com',
           label: 'Demo Site',
           position: 'left',
         },
