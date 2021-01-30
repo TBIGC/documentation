@@ -1,0 +1,46 @@
+---
+id: usage
+title: Who uses the dashboard?
+sidebar_label: Who uses the dashboard?
+slug: /usage
+---
+
+export const countries = [
+  {
+    country: 'Sierra Leone',
+    logo: 'sl-gov.png',
+    users: [
+      'Ministry of Finance',
+      'Ministry of Agriculture',
+      'Emergency Covid Response',
+      'Covid Economic Recovery plan'
+    ]
+  },
+  {
+    country: 'Kenya',
+    logo: 'kenya-gov.png',
+    users: [
+      'Postal Corporation',
+    ]
+  }
+]
+
+export const CurrentUsage = ({countries}) => (
+  <div>
+  {countries.map(c =>
+    <div>
+      <div className='usage'>
+        <img src={'/docs/assets/'+c.logo} width='80' className='align-self-center'/>
+        <h2 className='align-self-center country-title'>
+          <b><u>{c.country}</u></b>
+        </h2>
+      </div>
+      <ul style={{marginLeft: '90px'}}>
+        {c.users.map(u => <li>{u}</li>)}
+      </ul>
+    </div>
+  )}
+  </div>
+)
+
+<CurrentUsage countries={countries}/>

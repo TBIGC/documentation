@@ -1,11 +1,11 @@
 module.exports = {
   someSidebar: {
-    "Background": ['overview', 'history', 'purpose'],
+    "Overview": ['purpose', 'usage', 'history'],
     "How do I start my own dashboard?": ['requesting-dashboard'],
     "Setting up your dashboard": [
       'tracker-planning',
       'dashboard-planning',
-      'permissions',
+      'dashboard-roles',
       'hints-and-tips'
     ],
     "Using your dashboard": [],
