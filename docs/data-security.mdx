@@ -4,3 +4,64 @@ title: Data Security
 sidebar_label: Data Security
 slug: /data-security
 ---
+
+When working with sensitive government information, you need to know that your data
+is safe. The digital dashboard guarantees industry standards of data security allowing you
+to upload and use sensitive data, knowing that it is as secure as possible.
+
+Read our [standard contract for data security](assets/data-contract.pdf)
+
+### Data storage
+
+All data is stored on a fully encrypted PostgreSQL database, hosted by Heroku. Click
+[here](https://www.heroku.com/policy/security) to view Heroku's security and privacy
+policy.
+
+The only way to access this data is through the dashboard website. It cannot be accessed
+by anyone who does not have a dashboard login.
+
+
+### Passwords
+
+All passwords are encrypted using Argon 2 (selected as the winner of the Password
+Hashing Competition in 2015).
+
+All users are initially assigned a randomly generated password that is emailed to them.
+When they first log in, they are directed to create a new password which will only
+be accepted if it's deemed to be 'strong' by [ZXCVBN](https://github.com/dropbox/zxcvbn)
+
+
+### Isolating data within a dashboard
+
+Each dashboard user can only see data that the dashboard admin as specifically allowed
+to interact with see ([dashboard roles](dashboard-roles)). This data isolation is achieved
+by three systems:
+
+1. The dashboard interface will only display the pages from the dashboard that are relevant to them.
+There is no way for a user to request a page for a project that they are not part of.
+
+2. The backend code will not accept a request from a user who is not part of the project they are
+requesting. This means that even if a user finds a way of bypassing the dashboard interface, they cannot
+request or change any data on the backend unless the dashboard admin has allowed them to access that data.
+
+3. Every request for data must be accompanied by a unique key that is stored securely on the heroku server.
+The dashboard interface automatically provides that key for pages that a user is allowed to view. Otherwise
+it is impossible for a user to interact with the backend data.
+
+
+### Isolating data across multiple dashboards
+
+The protections are in place where multiple dashboards are hosted on the same site, sharing
+the same database (see [hosting](hosting)).
+
+Data from one dashboard cannot 'leak' to another dashboard - each dashboard is effectively
+independent of any others.
+
+
+### How can we guarantee this?
+
+In order to guarantee that the dashboard is secure, it has been penetration tested by a software
+security consultants. During this testing, the consultants were not able to access without a
+dashboard login. When given a login, the consultants were unable to access data from other areas of the same
+dashboard, nor access any data from other dashboards hosted on the same database
+

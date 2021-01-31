@@ -20,7 +20,7 @@ module.exports = {
       'using-the-action-tracker',
       'using-the-full-dashboard'
     ],
-    "Data and Security": [
+    "Data Security": [
       'data-security'
     ],
     "Frequently asked questions": [
