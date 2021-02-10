@@ -14,7 +14,6 @@ module.exports = {
       'tracker-planning',
       'dashboard-planning',
       'dashboard-roles',
-      'hints-and-tips'
     ],
     "Using your dashboard": [
       'using-the-action-tracker',
