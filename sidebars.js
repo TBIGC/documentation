@@ -16,8 +16,8 @@ module.exports = {
       'dashboard-roles',
     ],
     "Using your dashboard": [
-      'using-the-action-tracker',
-      'using-the-full-dashboard'
+      'create-user',
+      'add-content'
     ],
     "Data Security": [
       'data-security'
