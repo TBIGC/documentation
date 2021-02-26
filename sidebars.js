@@ -17,7 +17,10 @@ module.exports = {
     ],
     "Using your dashboard": [
       'create-user',
-      'add-content'
+      'add-content',
+      'update-content',
+      'update-targets',
+      'other-features'
     ],
     "Data Security": [
       'data-security'
