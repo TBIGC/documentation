@@ -19,14 +19,11 @@ module.exports = {
       'create-user',
       'add-content',
       'update-content',
-      'update-targets',
-      'other-features'
+      'user-options'
     ],
-    "Data Security": [
-      'data-security'
+    "Security and privacy": [
+      'data-security',
+      'privacy'
     ],
-    "Frequently asked questions": [
-      'frequently-asked-questions'
-    ]
   },
 };
