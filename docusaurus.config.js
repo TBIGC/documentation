@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'TBI Digital Dashboards',
+  title: 'TBI Project Dashboards',
   tagline: 'Helping governments to co-ordinate large scale projects',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -40,12 +40,6 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
 
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
