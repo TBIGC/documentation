@@ -4,6 +4,7 @@ title: Who uses the dashboard?
 sidebar_label: Who uses the dashboard?
 slug: /usage
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export const countries = [
   {
@@ -45,7 +46,7 @@ export const CurrentUsage = ({countries}) => (
   {countries.map(c =>
     <div>
       <div className='usage'>
-        <img src={'/docs/assets/'+c.logo} width='80' className='align-self-center'/>
+        <img src={useBaseUrl('/assets/'+c.logo)} width='80' className='align-self-center'/>
         <h2 className='align-self-center country-title'>
           <b><u>{c.country}</u></b>
         </h2>
