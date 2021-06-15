@@ -1,12 +1,12 @@
 module.exports = {
-  title: 'TBI Project Dashboards',
+  title: 'TBI Digital Dashboard',
   tagline: 'Helping governments to co-ordinate large scale projects',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/tbilogo.jpg',
   organizationName: 'TBIGC', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
-  url: 'https://TBIGC.github.io',
+  url: 'https://tbigc.github.io',
   baseUrl: '/documentation/',
   themeConfig: {
     colorMode: {
@@ -20,7 +20,7 @@ module.exports = {
       },
       items: [
         {
-          href: 'https://digital-dashboard-demo.herokuapp.com',
+          href: 'https://demo.digitaldashboard.institute.global',
           label: 'Demo Site',
           position: 'left',
         },
