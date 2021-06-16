@@ -31,6 +31,9 @@ module.exports = {
       links: [],
       copyright: `Copyright © ${new Date().getFullYear()} Tony Blair Institute for Global Change`,
     },
+    gtag: {
+      trackingID: 'G-3L1L6GWKGD',
+    },
   },
   presets: [
     [

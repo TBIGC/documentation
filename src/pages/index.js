@@ -4,7 +4,14 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Head from '@docusaurus/Head';
 import styles from './styles.module.css';
+
+const GoogleSiteVerification = () => (
+  <Head>
+    <meta name="google-site-verification" content="-clqnBxHgIwDM3VaSWDeTCK7WkUFCyzyUHPB5szcHno" />
+  </Head>
+);
 
 const features = [
   {
@@ -59,6 +66,7 @@ function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
+      <GoogleSiteVerification/>
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
