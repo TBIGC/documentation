@@ -2,7 +2,6 @@ module.exports = {
   someSidebar: {
     "Overview": [
       'purpose',
-      'usage',
       'history'
     ],
     "How do I start my own dashboard?": [
